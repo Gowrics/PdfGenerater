@@ -9,17 +9,18 @@ import { Page_4 } from "./Page_4";
 import { Page_5 } from "./Page_5";
 
 const PdfButton = () => {
-  const pages = [<Page_1 />, <Page_2 />, <Page_3 />, <Page_4 />, <Page_5 />];
+//  const pages = [<Page_1 />, <Page_2 />, <Page_3 />, <Page_4 />, <Page_5 />];
+  const pages = [<Page_1 />];
 
   const generatePdf = async () => {
     const pdf = new jsPDF("p", "mm", "a4"); // A4 dimensions
 
     for (let i = 0; i < pages.length; i++) {
       const tempDiv = document.createElement("div");
-     // tempDiv.style.position = "absolute";
+      tempDiv.style.position = "absolute";
       tempDiv.style.padding ="0px";
-      //tempDiv.style.top = "-9999px";
-      //tempDiv.style.left = "-9999px";
+      tempDiv.style.top = "-9999px";
+      tempDiv.style.left = "-9999px";
       tempDiv.style.width = "210mm"; // Match A4 width
       tempDiv.style.height = "297mm"; // Match A4 height
       tempDiv.style.backgroundColor = "#fff";
@@ -51,7 +52,7 @@ const PdfButton = () => {
     }
 
     // Save the PDF
-    pdf.save("downloadscale(5).pdf");
+    pdf.save("download.pdf");
   };
 
   return (

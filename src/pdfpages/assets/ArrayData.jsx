@@ -66,3 +66,25 @@ export const chartData = [
   
   ];
   
+  export const  timeScore100 = [
+    { time: '11.11', scoreType: 'High Score',measurement:'s' },
+    { time: '11.35', scoreType: 'Avg. Score', measurement:'s'},
+    { time: '11 25', scoreType: 'Season Best', measurement:'s' },
+    { time: '11.50', scoreType: 'Min Score', measurement:'s' }
+  ];
+  export const  timeScore200 = [
+    { time: '22.12', scoreType: 'High Score', measurement:'s' },
+    { time: '22.35', scoreType: 'Avg. Score' , measurement:'s'},
+    { time: '22 25', scoreType: 'Season Best' , measurement:'s'},
+    { time: '23.51', scoreType: 'Min Score', measurement:'s' }
+  ];  export const  timeScoreLong = [
+    { time: '7.12', scoreType: 'High Score' , measurement:'m'},
+    { time: '6.99', scoreType: 'Avg. Score' , measurement:'m'},
+    { time: '6 95', scoreType: 'Season Best' , measurement:'m'},
+    { time: '6.50', scoreType: 'Min Score', measurement:'m' }
+  ];
+  export const rankData = [
+    { label: "District", rank: "01", total: "368" },
+    { label: "State", rank: "01", total: "368" },
+    { label: "National", rank: "01", total: "368" },
+  ];

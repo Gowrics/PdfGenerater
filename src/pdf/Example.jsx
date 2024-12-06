@@ -186,3 +186,32 @@ export const Page_1 = () => {
     </div>
   )
 }
+
+-------------------------------------
+{chartData.map((data, index) => (
+  <div key={index} style={{ margin: "20px 0" }}>
+    <ChartComponent 
+      options={data.options} 
+      series={data.series} 
+      type="line" 
+    />
+  </div>
+))}
+
+-----------------------------
+{/* <div className={styles.RankBox} >
+  <p>Rank</p>
+  <div style={{display:'flex',flexDirection:'row'}}>
+     <span>District <br/><span style={{fontSize:'10px'}}><b style={{fontSize:'20px'}}>01</b>/368</span></span>
+     <span>State <br/><span style={{fontSize:'10px'}}><b style={{fontSize:'20px'}}>01</b>/368</span></span>
+     <span>National <br/><span style={{fontSize:'10px'}}><b style={{fontSize:'20px'}}>01</b>/368</span></span>
+</div>
+</div> */}
+
+
+{/* <div className={styles.ScoreType}>          
+  <span>11.11 s <br/><span style={{fontSize:'10px'}}>High Score</span></span>
+  <span>11.11 s <br/><span style={{fontSize:'10px'}}>High Score</span></span>
+  <span>11.11 s <br/><span style={{fontSize:'10px'}}>High Score</span></span>
+  <span>11.11 s <br/><span style={{fontSize:'10px'}}>High Score</span></span>
+</div> */}

@@ -1,6 +1,6 @@
 // Header.js
 import React from "react";
-
+import img1 from'../pdfpages/assets/image_7.png';
 const Header = () => {
   return (
     <div >
@@ -13,14 +13,16 @@ const Header = () => {
       <div style={{textAlign:"end"}}><h3>100 m | 200 m | Long Jump</h3></div>
       </div>
 
-      <img
-        src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600" // Replace with actual profile image URL
+      <img src={img1}
         alt="Profile"
         style={{
-          width: "200px",
-          height: "200px",
+          width: "130px",
+          height: "130px",
           borderRadius: "50%",
           marginBottom: "10px",
+          position:"relative",
+          left:"600px",
+          bottom:"100px"
         }}
       />
       <h1>Report Title</h1>
