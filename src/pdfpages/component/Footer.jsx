@@ -8,10 +8,9 @@ const Footer = ({ pageNumber }) => {
         display:"flex",
         justifyContent:"end",
         alignItems:"center",
-        position: "absolute",
-        bottom: "-5mm",
-        right:"60px",
-        width: "100%",
+        marginRight:'10px',
+        marginTop:'-7px'
+
       }}
     >
       <p>Page {pageNumber}</p>
