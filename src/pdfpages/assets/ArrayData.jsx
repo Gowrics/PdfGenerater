@@ -87,4 +87,211 @@ export const chartData = [
     { label: "District", rank: "01", total: "368" },
     { label: "State", rank: "01", total: "368" },
     { label: "National", rank: "01", total: "368" },
-  ];
+  ];  
+
+//array for Chart
+const charts = [
+  {
+    options: {
+      chart: {
+        type: "bar",
+        height: 350,
+        toolbar: { show: false },
+      },
+      plotOptions: {
+        bar: {
+          horizontal: false,
+          columnWidth: "40%", // Adjust the width as a percentage of the available space
+        },
+      },
+      xaxis: {
+        categories: ["Sep-5", "Sep-12", "Sep-19"],
+      },
+      yaxis: {
+        title: {
+          text: "Time Duration (s)",
+        },
+        min: 9.0,
+        max: 12.0,
+        tickAmount: 6,
+        labels: {
+          formatter: function (value) {
+            return value.toFixed(2);
+          },
+        },
+      },
+      annotations: {
+        xaxis: [
+          {
+            y: 9.00,
+            borderColor: "#1F1F1F", 
+            strokeDashArray: [1, 10],
+            strokeWidth: 100,
+          },
+          {
+            y: 10.00,
+            borderColor: "#1F1F1F", 
+            strokeDashArray: [1, 10],
+            strokeWidth: 100,
+          },
+        ],
+        yaxis: [
+          {
+            y: 9.00,
+            borderColor: "#1F1F1F",
+            strokeDashArray: [1, 3],
+            strokeWidth: 100,
+          },
+          {
+            y: 9.50,
+            borderColor: "#1F1F1F",
+            strokeDashArray: [1, 3],
+            strokeWidth: 100,
+          },
+          {
+            y: 10.00,
+            borderColor: "#1F1F1F",
+            strokeDashArray: [1, 3],
+            strokeWidth: 100,
+          },
+          {
+            y: 10.50,
+            borderColor: "#1F1F1F",
+            strokeDashArray: [1, 3],
+            strokeWidth: 100,
+          },
+        ],
+      },
+      colors: ["#64B4B7"],
+      dataLabels: {
+        enabled: false,
+      },
+    },
+    series: [
+      {
+        name: "Time Duration",
+        data: [11.75, 11.50, 12.85],
+      },
+    ],
+  },
+  {
+    options: {
+      chart: {
+        type: "bar",
+        height: 350,
+        toolbar: { show: false },
+      },
+      plotOptions: {
+        bar: {
+          horizontal: false,
+          columnWidth: "40%",
+        },
+      },
+      xaxis: {
+        categories: ["Oct-5", "Oct-12", "Oct-19"],
+      },
+      yaxis: {
+        title: {
+          text: "Time Duration (s)",
+        },
+        min: 9.0,
+        max: 12.0,
+        tickAmount: 6,
+        labels: {
+          formatter: function (value) {
+            return value.toFixed(2);
+          },
+        },
+      },
+      annotations: {
+        xaxis: [
+          {
+            y: 9.00,
+            borderColor: "#1F1F1F",
+            strokeDashArray: [1, 10],
+            strokeWidth: 100,
+          },
+        ],
+        yaxis: [
+          {
+            y: 9.00,
+            borderColor: "#1F1F1F",
+            strokeDashArray: [1, 3],
+            strokeWidth: 100,
+          },
+        ],
+      },
+      colors: ["#FF5733"], // Different color for the second chart
+      dataLabels: {
+        enabled: false,
+      },
+    },
+    series: [
+      {
+        name: "Time Duration",
+        data: [10.5, 11.25, 12.0],
+      },
+    ],
+  },
+  {
+    options: {
+      chart: {
+        type: "bar",
+        height: 350,
+        toolbar: { show: false },
+      },
+      plotOptions: {
+        bar: {
+          horizontal: false,
+          columnWidth: "40%",
+        },
+      },
+      xaxis: {
+        categories: ["Nov-5", "Nov-12", "Nov-19"],
+      },
+      yaxis: {
+        title: {
+          text: "Time Duration (s)",
+        },
+        min: 9.0,
+        max: 12.0,
+        tickAmount: 6,
+        labels: {
+          formatter: function (value) {
+            return value.toFixed(2);
+          },
+        },
+      },
+      annotations: {
+        xaxis: [
+          {
+            y: 9.00,
+            borderColor: "#1F1F1F",
+            strokeDashArray: [1, 10],
+            strokeWidth: 100,
+          },
+        ],
+        yaxis: [
+          {
+            y: 9.00,
+            borderColor: "#1F1F1F",
+            strokeDashArray: [1, 3],
+            strokeWidth: 100,
+          },
+        ],
+      },
+      colors: ["#28A745"], // Different color for the third chart
+      dataLabels: {
+        enabled: false,
+      },
+    },
+    series: [
+      {
+        name: "Time Duration",
+        data: [11.5, 11.8, 12.2],
+      },
+    ],
+  },
+];
+
+//
